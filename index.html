@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang= "en-ca">
+<head>
+<meta charset="utf-8">
+<title>Forms</title>
+ <link href="css/main.css" rel="stylesheet">
+
+ </head>
+
+ <body>
+
+ <form action="http://formspree.io/erin.mill123@gmail.com" method="post">
+
+  <div>
+  <label for="name">Name</label>
+    
+    <input id="name" required name="name" name="name">
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" required placeholder="erin.mill123@gmail.com" name="email">
+  </div>
+
+  <div>
+    <label for="subject">Subjects</label>
+    <select id="subject" name="_subject">
+      <option>erin</option>
+      <option>ryan</option>
+      <option>Kate</option>
+
+    </select>
+  </div>
+
+  <fieldset>
+    <legend>How are you feeling bae?</legend>
+
+    <input id="happy" type="radio" name="feels">
+    <label for="happy">Happy</label>
+
+     <input id="real-sad" type="radio" name="feels">
+    <label for="real-sad">real sad</label>
+
+     <input id="turnt" type="radio" name="feels">
+    <label for="turnt">turnt</label>
+
+     <input id="hi" type="radio" name="feels">
+    <label for="hi">hi</label>
+  </fieldset>
+
+  <div>
+    <label for="message">Message</label>
+    <textarea name="message" id="message"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Send!</button>
+  </div>
+
+  <input type="hidden" name="_next" value="http://erinmilling.github.io/forms-demo/thnx.html">
+
+  </form>
+
+  </body>
+</html>
